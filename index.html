@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP-POO - Liste de contacts</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>TP-POO - Liste de contacts</h1>
+        <p class="subtitle">Mise en application de la théorie POO en Javascript</p>
+
+       
+        <table id="contactList">
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Date Naissance</th>
+                    <th>Téléphone</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+       
+        <form id="addContactForm">
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="title" value="Mr" required> Mr
+                </label>
+                <label>
+                    <input type="radio" name="title" value="Mme"> Mme
+                </label>
+            </div>
+            <input type="text" id="name" placeholder="Nom" required>
+            <input type="text" id="firstName" placeholder="Prénom" required>
+            <input type="date" id="dateOfBirth" placeholder="jj/mm/aaaa" required>
+            <input type="tel" id="phoneNumber" placeholder="Téléphone" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Ajouter</button>
+        </form>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
